@@ -9,31 +9,31 @@ const teamMembers = [
     name: "Ahmed  Waleed",
     role: "UI/UX Designer",
     bio: "Responsible for user research, interface design, prototyping, and creating the overall user experience.",
-    image: "./pics/Ahmed.jpg",
+    image: "https://media.discordapp.net/attachments/1482428442409566291/1519646845389897738/Screenshot_2025-12-16_221907.png?ex=6a3ef9a9&is=6a3da829&hm=d058b7d45436b409d838d44bec4faea727b02a30c5e39d43918a2022ba0cfdfe&=&format=webp&quality=lossless",
   },
   {
     name: "Youssef Zidan",
     role: "Flutter & Dart Developer",
     bio: "Responsible for the application development, creating scalable Flutter components, connecting app flows, and delivering a smooth mobile experience.",
-    image: "./pics/Yousef.jpg",
+    image: "https://media.discordapp.net/attachments/1482428442409566291/1519647703951212594/WhatsApp_Image_2026-06-25_at_1.16.21_PM.jpeg?ex=6a3efa76&is=6a3da8f6&hm=ee619cedeb2373f2a517aa4265ffdd6eecdf64265be53080748d563a39027f4a&=&format=webp&width=861&height=885",
   },
   {
     name: "Ali Mansour",
     role: "Backend Developer",
     bio: "Built the backend systems and APIs, managing data flow and creating the foundation that powers the application",
-    image: "./pics/Ali.jpg",
+    image: "https://media.discordapp.net/attachments/1482428442409566291/1519647039468605470/1756928751846.png?ex=6a3ef9d7&is=6a3da857&hm=6612c8b6d4c0b5bda13b6e6830021c86aa9bf77b401407aabcb0fcc63435e329&=&format=webp&quality=lossless",
   },
   {
     name: "Omar Mosad",
     role: "Frontend Developer",
     bio: "Responsible for building the user interface, turning design wireframes into responsive code, and ensuring a seamless interactive web experience.",
-    image: "./pics/Omar.jpg",
+    image: "https://media.discordapp.net/attachments/1519995124170362923/1519995159389929612/Omar.jpg?ex=6a3f954e&is=6a3e43ce&hm=06c8ffc16514b2c0caffc8ea1bb7508f4e4eebcf6b328ddf0027a7e7363023bb&=&format=webp&width=885&height=885",
   },
   {
     name: "Abraam Michal",
     role: "Assets, Content & Testing",
     bio: "Provided visual resources and content while testing the product and sharing feedback to enhance the final experience.",
-    image: "./pics/Abraam.jpg",
+    image: "https://media.discordapp.net/attachments/1482428442409566291/1519648668830007427/992d8168-e50e-4db3-964c-2e95648725ef.png?ex=6a3efb5c&is=6a3da9dc&hm=59bf8cfa074b4c1423b12e9dbbec3ddff0a1bc5907084203361c1621dcf7d806&=&format=webp&quality=lossless&width=885&height=885",
   },
 ];
 
@@ -128,9 +128,9 @@ const Page = () => {
 
             <div className="flex items-center gap-6 mt-6 pt-6 border-t border-border">
               {[
-                { value: "2021", label: "Founded in Austin, TX", color: "text-primary" },
-                { value: "500k+", label: "Active Learners", color: "text-foreground" },
-                { value: "42", label: "Expert Roadmaps", color: "text-green-500" },
+                { value: "2026", label: "PortSaid", color: "text-primary" },
+                { value: "+10", label: "Active Learners", color: "text-foreground" },
+                { value: "20+", label: "Expert Roadmaps", color: "text-green-500" },
               ].map((s, i) => (
                 <div key={s.label} className={i > 0 ? "pl-6 border-l border-border" : ""}>
                   <p className={`text-2xl font-bold ${s.color}`}>{s.value}</p>
