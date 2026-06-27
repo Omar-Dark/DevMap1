@@ -8,7 +8,7 @@ import { roadmapProps } from "@/app/types/api";
 import toast from "react-hot-toast";
 import { AxiosError } from "axios";
 import RoadmapItemSkeletonLoading from "@/app/components/Roadmap/RoadmapItemLoading";
-import { Search, SlidersHorizontal, X } from "lucide-react";
+import { Search, X } from "lucide-react"; // Removed SlidersHorizontal
 
 const Page = () => {
   const [roadmaps, setRoadmaps] = useState<roadmapProps[]>([]);
@@ -54,6 +54,9 @@ const Page = () => {
             Choose a structured path to master new skills. From fundamentals to advanced specialized tracks, curated for career growth.
           </p>
         </div>
+
+        {/* Search Bar Wrapper */}
+        <div className="flex flex-wrap items-center gap-3 mb-8">
           <div className="relative flex-1 max-w-xs">
             <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
             <input
@@ -70,7 +73,7 @@ const Page = () => {
           </div>
           {searchQuery && (
             <button onClick={() => setSearchQuery("")} className="text-xs text-primary hover:underline">
-              Clear Filters
+              Clear Search
             </button>
           )}
         </div>
@@ -99,7 +102,7 @@ const Page = () => {
                 {filtered.length === 0 && (
                   <div className="col-span-3 text-center py-16 text-muted-foreground">
                     <p className="text-lg font-medium mb-2">No roadmaps found</p>
-                    <p className="text-sm">Try adjusting your filters or search query.</p>
+                    <p className="text-sm">Try adjusting your search query.</p>
                   </div>
                 )}
               </div>
