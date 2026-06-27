@@ -54,28 +54,6 @@ const Page = () => {
             Choose a structured path to master new skills. From fundamentals to advanced specialized tracks, curated for career growth.
           </p>
         </div>
-
-        {/* Filters */}
-        <div className="flex flex-wrap items-center gap-3 mb-8">
-          <div className="relative">
-            <select className="appearance-none pl-4 pr-8 py-2 text-sm border border-border rounded-lg bg-card text-foreground outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 cursor-pointer">
-              <option>Category: All Fields</option>
-              <option>Frontend</option>
-              <option>Backend</option>
-              <option>DevOps</option>
-              <option>Design</option>
-            </select>
-            <SlidersHorizontal size={13} className="absolute right-2.5 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" />
-          </div>
-          <div className="relative">
-            <select className="appearance-none pl-4 pr-8 py-2 text-sm border border-border rounded-lg bg-card text-foreground outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 cursor-pointer">
-              <option>Difficulty: Any Level</option>
-              <option>Beginner</option>
-              <option>Intermediate</option>
-              <option>Advanced</option>
-            </select>
-            <SlidersHorizontal size={13} className="absolute right-2.5 top-1/2 -translate-y-1/2 text-muted-foreground pointer-events-none" />
-          </div>
           <div className="relative flex-1 max-w-xs">
             <Search size={13} className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
             <input
